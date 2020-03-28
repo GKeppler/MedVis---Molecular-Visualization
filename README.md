@@ -5,11 +5,12 @@ This GitHub contains the results from the project of the course 'Visualization o
 
 ## Structure of the GitHub:
 ### Doc:
-  contains the LaTex-files + Graphs, tables, pictures, etc.
-  https://www.overleaf.com/project/5e716618c1582f00010c61bb
+  LaTex files ->   https://www.overleaf.com/project/5e716618c1582f00010c61bb not synchonized atm  
+  Citavi files  
+  Graphs, tables, pictures, etc.  
 
 ### Data:
-  the used Data is stored in here
+  the used Data is stored in here  
   potential source: https://www.rcsb.org/
   
 
