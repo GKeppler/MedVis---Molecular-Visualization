@@ -1,7 +1,9 @@
 # Visualization of Medical Data  - Molecular Visualization
 
+This GitHub contains the results from the project of the course 'Visualization of Medical Data 2', Tu Vienna
 
-## Structure of the GitHub
+
+## Structure of the GitHub:
 ### Doc:
   contains Graphs, tables, pictures, etc.
 
@@ -10,7 +12,7 @@
   potential source: https://www.rcsb.org/
   
 
-
+## Important stuff atm:
 other Links:
   http://book.bionumbers.org/
   https://sciencevis.ca/index.php/portfolio/molecular-visualization-principles/
