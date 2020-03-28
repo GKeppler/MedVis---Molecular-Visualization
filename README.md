@@ -1,11 +1,11 @@
-#Visualization of Medical Data  - Molecular Visualization
+# Visualization of Medical Data  - Molecular Visualization
 
 
-##Structure of the GitHub
-###Doc:
+## Structure of the GitHub
+### Doc:
   contains Graphs, tables, pictures, etc.
 
-###Data:
+### Data:
   the used Data is stored in here
   potential source: https://www.rcsb.org/
   
