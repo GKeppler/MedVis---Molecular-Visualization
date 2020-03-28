@@ -15,10 +15,7 @@ This GitHub contains the results from the project of the course 'Visualization o
   
 
 ## Important stuff atm:
-other Links:
-  http://book.bionumbers.org/
-  https://sciencevis.ca/index.php/portfolio/molecular-visualization-principles/
-  
+Molecular Visualization: Principles and Practice: https://www.youtube.com/watch?v=G5FxPdBMUHE&t=664s
   
 State of the Art Guidelines from https://blog.babak.no/2007/05/22/why-and-how-to-write-the-state-of-the-art/:
 
