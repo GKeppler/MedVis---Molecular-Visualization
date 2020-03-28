@@ -5,7 +5,8 @@ This GitHub contains the results from the project of the course 'Visualization o
 
 ## Structure of the GitHub:
 ### Doc:
-  contains Graphs, tables, pictures, etc.
+  contains the LaTex-files + Graphs, tables, pictures, etc.
+  https://www.overleaf.com/project/5e716618c1582f00010c61bb
 
 ### Data:
   the used Data is stored in here
