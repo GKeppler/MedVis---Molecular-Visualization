@@ -1,0 +1,192 @@
+
+% ---------------------------------------------------------------------------
+% Author guideline and sample document for EG publication using LaTeX2e input
+% D.Fellner, v1.13, Jul 31, 2008
+
+\documentclass{egpubl}
+\usepackage{eurovis2014}
+
+% --- for  Annual CONFERENCE
+% \ConferenceSubmission   % uncomment for Conference submission
+% \ConferencePaper        % uncomment for (final) Conference Paper
+% \STAR                   % uncomment for STAR contribution
+% \Tutorial               % uncomment for Tutorial contribution
+% \ShortPresentation      % uncomment for (final) Short Conference Presentation
+% \Areas                  % uncomment for Areas contribution
+% \MedicalPrize           % uncomment for Medical Prize contribution
+% \Education              % uncomment for Education contribution
+%
+% --- for  CGF Journal
+% \JournalSubmission    % uncomment for submission to Computer Graphics Forum
+% \JournalPaper         % uncomment for final version of Journal Paper
+%
+% --- for  CGF Journal: special issue
+% \SpecialIssueSubmission    % uncomment for submission to Computer Graphics Forum, special issue
+\SpecialIssuePaper         % uncomment for final version of Journal Paper, special issue
+%
+% --- for  EG Workshop Proceedings
+% \WsSubmission    % uncomment for submission to EG Workshop
+% \WsPaper         % uncomment for final version of EG Workshop contribution
+%
+ \electronicVersion % can be used both for the printed and electronic version
+
+% !! *please* don't change anything above
+% !! unless you REALLY know what you are doing
+% ------------------------------------------------------------------------
+
+% for including postscript figures
+% mind: package option 'draft' will replace PS figure by a filname within a frame
+\ifpdf \usepackage[pdftex]{graphicx} \pdfcompresslevel=9
+\else \usepackage[dvips]{graphicx} \fi
+
+\PrintedOrElectronic
+
+% prepare for electronic version of your document
+\usepackage{t1enc,dfadobe}
+
+\usepackage{egweblnk}
+\usepackage{cite}
+
+\title      {Visualization of Molecular Data}
+
+% for anonymous conference submission please enter your SUBMISSION ID
+% instead of the author's name (and leave the affiliation blank) !!
+\author{Alexander Rabinowitsch \& Gustav Keppler}
+    
+
+\begin{document}
+
+% \teaser{
+%  \includegraphics[width=\linewidth]{eg_new}
+%  \centering
+%   \caption{New EG Logo}
+% \label{fig:teaser}
+% }
+
+\maketitle
+
+\begin{abstract}
+ .
+
+\end{abstract}
+
+
+%-------------------------------------------------------------------------
+\section{Introduction}
+-leave Vis of Molec. Dynamics out
+
+challenges:
+-efficient vis. techniques for large datasets
+--> not enough technology to implment that.
+    Big data is the future!
+-multiscale vis
+    --> could be an option, implementin this with CellView for example
+-vis of quantum effects in molecular systems
+    --> note: define quantum effect, probably also possible with cellvie
+-interactive ray-tracing
+   --> probably high gpu cost, alforithmically and technically complex
+
+
+In the chapter of molecular data we will describe the data we are using to implement our methods. This are espcially RNA and DNA, as well as Lipids and Proteins.They are the three major biological macromolecules that are essential for all known forms of life. Quelle:https://www.rnasociety.org/what-is-rna
+
+In the methods chapter we will explain the most used techniques in the visualization of molecular data.
+--> one sentence to every method
+
+In the discussion chapter we discuss the results of our System of the Art Report and give outlooks on the future.
+
+%-------------------------------------------------------------------------
+\section{Molecular Data} %ALEX
+\subsection{Biomolecules}
+The types of molecular data, which are especially interesting for visualization, are biomolecules. Those are any substances produced by cells and living organisms. https://www.britannica.com/science/RNA
+The major subcategories which are analyezd are nucleic acids, RNA and DNA, as well as proteins.
+\subsubsection{Nucleic Acids}
+
+ Deoxyribonucleic acid, short DNA, is the hereditary material in all organisms. It is mostly found in the cell nucleus but also in the mitochondria. DNA information is stored as a code of ade up of four chemical bases: adenine (A), guanine (G), cytosine (C), and thymine (T). Human DNA consists of about 3 billion bases, and more than 99 percent of those bases are the same in all people.The base sequences determines the information available for building and maintaining an organism.
+ Quelle:https://ghr.nlm.nih.gov/primer/basics/dna
+ 
+ RNA, abbreviation of ribonucleic acid, is a complex compound of high molecular weight that functions in cellular protein synthesis and replaces DNA (deoxyribonucleic acid) as a carrier of genetic codes in some viruses. RNA consists of ribose nucleotides (nitrogenous bases appended to a ribose sugar) attached by phosphodiester bonds, forming strands of varying lengths. The nitrogenous bases in RNA are adenine, guanine, cytosine, and uracil, which replaces thymine in DNA. Quelle:https://www.britannica.com/science/RNA
+ 
+%\includegraphics[scale=0.8]{RNADNA.png}
+Quelle: https://www.nature.com/scitable/topicpage/protein-structure-14122136/
+\subsubsection{Proteins}
+
+Proteins are generally defined as large molecules which consist of one or more amino acid chains in specific orders, determined by the base sequence of nucleotides in the DNA coding for the protein.  
+Quelle: https://www.medicinenet.com/script/main/art.asp?articlekey=15380
+Proteins consist of amino acids which are linked by peptide bonds, The linear sequence of amino acids within a protein is considered the primary structure of the protein.
+
+Quelle: https://www.nature.com/scitable/topicpage/protein-structure-14122136/
+
+Proteines have critical functions in structure, transport and defense of living organisms. 
+Furthermore tremendously imprtant types of proteines are hormons and enzymes.
+https://courses.lumenlearning.com/wm-biology1/chapter/reading-function-of-proteins/
+\begin{figure}[h]
+%\includegraphics[scale=0.1]{proto4.png}
+von wikipedia irgendwo
+\end{figure}
+
+\section{Representation Methods}
+\label{RepMet:intro}
+There are different representation methods for the visualization of the molecular model. The choice depends on analysis task that is intended for the visualization. The models can be categorized into atomistic (\ref{RepMet:atomistic}) and abstract (\ref{RepMet:abstract}) types.
+
+%%%%%% Alex
+\subsection{simple shape} %%%%% structure needs to be changed to to atomic beeing the subsection
+\label{RepMet:atomistic}
+ graphical or schematic 2D representation
+ 
+\subsection{arbitrary shape}
+ missleading as structural data
+ 
+ 
+\subsection{data-driven shape}
+ Protine databank
+ why so important? ->strucure determines function
+\subsubsection{atomic}
+-> conveys scale, complexity, shown atoms, cant deline chains, visualy complex
+
+\subsubsection{ribbon style}
+-> highlights intermediate structure, functional components, domains and linkers
+
+
+\subsubsection{coarse surface style}
+-> distinguish chains, shows general general shape
+
+
+\subsubsection{tight surface style}
+-> shows complexity of the structure
+
+
+%%%%%%%  Gustav
+\subsection{Illustrative and Abstract Models}
+\label{RepMet:abstract}
+The models destribed above show the actuals molecules and atoms. Abstract models dilate other features of the molecular data. Those features are not or not unambiguously evident in the atomistic model.  
+This can benefit the understanding due to a a less dense representation or due to reduced coverage in very large molecules. In those complex molecules the general shape is much more important than the single atoms.\cite{VisBioSota}
+
+\subsubsection{molecular architecture}
+Visual abstraction of the molecular architecture can depict structural features more distinctly than an atomistic representation \cite{VisBioSota}. Those abstractions can be seen as different levels of detail that correspond to the underlying structural hierarchy of the molecules\cite{VisBioSota}. \\
+
+
+In 1981, Richardson\cite{Anfinsen.1981} presented the \textit{cartoon representation} for proteins, which delineates the secondary structure as ribbons and arrows. From that point forward, an assortment of carton renderings have been built up that differ the graphical appearance.
+
+\section{Rendering} %%%% Gustav
+
+\subsection{Multiscale rendering}
+
+\subsection{Futher methods}
+%-------------------------------------------------------------------------
+
+
+\section{Discussion}
+
+
+%-------------------------------------------------------------------------
+
+\subsection{Conclusions}
+
+%-------------------------------------------------------------------------
+
+%\bibliographystyle{eg-alpha}
+%\bibliographystyle{eg-alpha-doi}
+%\bibliography{egbibsample}
+
+\end{document}
+
