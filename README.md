@@ -1,3 +1,4 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/GKeppler/MedVis---Molecular-Visualization/master?filepath=molecular_visualization.ipynb)
 # Visualization of Medical Data  - Molecular Visualization
 
 This GitHub contains the results from the project of the course 'Visualization of Medical Data 2', Tu Vienna
